@@ -11,6 +11,14 @@ permissions:
   packages: write
 
 jobs:
+  sanity_check:
+    name: Sanity check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run bash command
+        run: echo hello
   build:
     name: Build docker image
     uses: PromiseNetwork/docker_tools_fork/.github/workflows/docker-build-image.yml@main
