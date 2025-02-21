@@ -1,4 +1,4 @@
-gcloud-pubsub-emulator 
+gcloud-pubsub-emulator
 ======================
 
 |dockerpulls|
