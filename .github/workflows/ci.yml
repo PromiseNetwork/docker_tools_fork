@@ -30,3 +30,4 @@ jobs:
       tags: |
         ${{ github.ref == 'ref/heads/main' && 'latest' || null }}
         ${{ github.event.pull_request.number && format('pr-{0}', github.event.pull_request.number) || null }}
+        us-central1-docker.pkg.dev/developmentartifacts1/promise-platform/docker-gcloud-pubsub-emulator:latest
