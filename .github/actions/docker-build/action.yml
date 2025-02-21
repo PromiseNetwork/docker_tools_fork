@@ -61,7 +61,7 @@ runs:
     - name: "Extend tags"
       shell: bash
       run: |
-        REPO_URL="us-central1-docker.pkg.dev/developmentartifacts1/promisepay"
+        REPO_URL="us-central1-docker.pkg.dev/developmentartifacts1/promise-platform"
         EXTENDED_TAGS=()
 
         echo '### Container Output :rocket:' >> $GITHUB_STEP_SUMMARY
