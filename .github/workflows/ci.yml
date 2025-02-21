@@ -28,5 +28,5 @@ jobs:
       name: docker-gcloud-pubsub-emulator
       build_context: "./docker-gcloud-pubsub-emulator"
       tags: |
-        ${{ github.ref == 'ref/heads/master' && 'latest' || null }}
+        ${{ github.ref == 'refs/heads/master' && 'latest' || null }}
         ${{ github.event.pull_request.number && format('pr-{0}', github.event.pull_request.number) || null }}
