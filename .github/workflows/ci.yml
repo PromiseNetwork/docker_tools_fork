@@ -17,7 +17,7 @@ jobs:
 
   build:
     name: Build docker image
-    uses: PromiseNetwork/docker_tools_fork/.github/workflows/docker-build-image.yml@main
+    uses: PromiseNetwork/docker_tools_fork/.github/workflows/docker-build-image.yml@master
     with:
       dockerfile: "docker-gcloud-pubsub-emulator/Dockerfile"
       name: docker-gcloud-pubsub-emulator
