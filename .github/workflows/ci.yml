@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: ["*"]
 
+permissions:
+  contents: read # This is required for actions/checkout
+  packages: write
+
 jobs:
   sanity_check:
     runs-on: ubuntu-latest
